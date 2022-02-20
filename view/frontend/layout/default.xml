@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Wdevs_CustomBar::css/custom-bar.css"/>
+    </head>
+    <body>
+        <referenceContainer name="header.container">
+            <block class="Wdevs\CustomBar\Block\Html\CustomBar" name="header.custom-bar" template="Wdevs_CustomBar::html/custom-bar.phtml" before="-"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,22 @@
+{
+    "name": "wdevs/module-custombar",
+    "description": "Menu Bar Module",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Trung Nguyen",
+            "email": "travisnguyenhoang@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wdevs\\CustomBar\\": ""
+        }
+    }
+}

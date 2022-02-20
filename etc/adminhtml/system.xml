@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wdevs" translate="label" sortOrder="999">
+            <label>wdevs</label>
+        </tab>
+        <section id="wdevs" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Custom Bar</label>
+            <tab>wdevs</tab>
+            <resource>Wdevs_CustomBar::config_wdevs_custombar</resource>
+            <group id="custombar" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Custom Bar Configuration</label>
+                <field id="status" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enabled</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,8 @@
+<?php
+/** @var $block \Wdevs\CustomBar\Block\Html\CustomBar */
+?>
+<?php if ($block->isCustomerLoggedIn() && $block->isModuleEnabled()): ?>
+    <div class="header header-custom-bar">
+        <?= $block->getGroupName() ?>
+    </div>
+<?php endif; ?>
